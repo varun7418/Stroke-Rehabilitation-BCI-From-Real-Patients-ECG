@@ -418,7 +418,7 @@ def run_streamlit_app():
 
         st.divider()
         st.header("📥 Downloads")
-        _ppt_path = Path(__file__).resolve().parent / "PPT" / "Stroke_Rehab_BCI_Improved_VARUN_K.pptx"
+        _ppt_path = Path(__file__).resolve().parent.parent / "PPT" / "Stroke_Rehab_BCI_Improved_VARUN_K.pptx"
         if _ppt_path.exists():
             with open(_ppt_path, "rb") as _ppt_file:
                 st.download_button(
