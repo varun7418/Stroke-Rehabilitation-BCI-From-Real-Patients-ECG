@@ -1,0 +1,9 @@
+moabb
+mne
+scikit-learn
+pandas
+numpy
+scipy
+matplotlib
+pyriemann
+streamlit

@@ -1,0 +1,4 @@
+subject,n_trials,balanced_accuracy,mean_confidence,above_chance
+1,40,0.525,0.5538562215555917,False
+2,40,0.475,0.571842483539079,False
+3,40,0.5,0.5830949949483142,False

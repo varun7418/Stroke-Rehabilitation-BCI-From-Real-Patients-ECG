@@ -1,0 +1,25 @@
+# Python cache & build
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+venv/
+.venv/
+env/
+
+# Large dataset caches (Never upload patient EEG data to GitHub)
+*.edf
+*.set
+*.fif
+*.npz
+*.tar.gz
+*.zip
+mne_data/
+cache/
+outputs/cache/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
