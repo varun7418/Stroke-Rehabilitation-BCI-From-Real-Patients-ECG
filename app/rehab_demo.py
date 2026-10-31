@@ -416,6 +416,22 @@ def run_streamlit_app():
 
         st.caption("Chance level for 40 trials is ~65% (p < 0.05).")
 
+        st.divider()
+        st.header("📥 Downloads")
+        _ppt_path = Path(__file__).resolve().parent / "PPT" / "Stroke_Rehab_BCI_Improved_VARUN_K.pptx"
+        if _ppt_path.exists():
+            with open(_ppt_path, "rb") as _ppt_file:
+                st.download_button(
+                    label="⬇ Download Project PPT",
+                    data=_ppt_file,
+                    file_name="Stroke_Rehab_BCI_Improved_VARUN_K.pptx",
+                    mime="application/vnd.openxmlformats-officedocument.presentationml.presentation",
+                    use_container_width=True,
+                    help="Download the project presentation slides.",
+                )
+        else:
+            st.caption("PPT file not found.")
+
     # Fit Leave-One-Patient-Out Model
     @st.cache_resource(show_spinner="Training classifier on training patients...")
     def train_held_out_model(held_out_subj, model_choice):
